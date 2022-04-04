@@ -6,7 +6,9 @@
   "contributors": [],
   "scripts": {
     "build": "tsc",
-    "example": "tsc"
+    "example": "tsc",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "license": "MIT",
   "engines": {
@@ -55,7 +57,8 @@
     "satoshi-bitcoin": "^1.0.4",
     "socket.io": "^2.1.1",
     "socket.io-client": "^2.1.1",
-    "wif": "^2.0.6"
+    "wif": "^2.0.6",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@istanbuljs/nyc-config-typescript": "^0.1.3",
@@ -78,5 +81,6 @@
     "source-map-support": "^0.5.12",
     "ts-node": "^8.3.0",
     "typescript": "^3.4.5"
-  }
+  },
+  "snyk": true
 }
